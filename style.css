@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --primary-color: #daf1f9;	
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;            
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+/* Header-Section Start */
+
+header .top-header{
+    text-align: right;
+}
+
+header .top-header a{
+    display: inline-block;
+    margin-left: 15px;
+    
+}
+
+header .top-header img{
+    height: 50px;
+}
+
+header .menu .container{
+    text-align: center;
+}
+
+header .menu a{
+    display: inline-block;
+}
+
+/* Header-Section End */
+
+
+/* Banner-Section Start */
+
+.banner-section{
+    padding: 50px 0;
+}
+
+.banner-section .banner-heading{
+    text-align: center;
+}
+
+.banner-section .banner-heading h1{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 36px;
+    color: #4174ba;
+}
+
+.banner-section .banner-heading p{
+    font-size: 20px;
+    font-family: "Asap", sans-serif;
+    font-weight: 500;
+    color: #8ed8f8;
+    margin: 16px 0;
+}
+
+
+.banner-section .content-wrapper{
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.banner-section .banner-content{
+    text-align: left;
+    align-content: center;
+}
+
+.banner-section .banner-content h3{
+    font-family: "Poetsen One", sans-serif;
+    color: #4174ba;
+    margin-bottom: 16px;
+}
+
+.banner-section .banner-content p{
+    color: #707071;
+    font-family: "Asap", sans-serif;
+    font-size: 15px;
+}
+
+.banner-section .banner-content .para-1{
+    line-height: 22px;
+    margin-right: 50px;
+}
+
+.banner-section .banner-content .para-2{
+    color: #4174ba;
+    font-weight: 600;   
+    margin-top: 16px; 
+    margin-bottom: 25px;
+}
+
+.banner-section .banner-content a{
+    color: #fff;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #0580b9;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+
+.banner-section .banner-content img{
+    position: absolute;
+    left: 85%; 
+      
+}
+
+
+
+/* Banner-Section End */
+
+
+/* Product-Section Start */
+
+.product-section{
+    text-align: center;
+    padding-bottom: 180px;
+}
+
+.product-section h2{
+    color: #4174ba;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 36px;
+    margin: 40px 0;
+}
+
+.product-section .content-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 80px;
+}
+
+.product-section h3{
+    font-family: "Poetsen One", sans-serif;
+    color: #4174ba;
+    margin-top: 20px;
+    margin-bottom: 13px;
+}
+
+.product-section p{
+    color: #8ed8f8;
+    font-family: "Asap", sans-serif;
+    font-weight: 600;
+}
+
+.product-section a{
+    color: #fff;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #0580b9;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+/* Product-Section End */
+
+
+/* Footer-Section Start */
+
+.footer-section{
+    background-color: #d22586;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    position: relative;
+    text-align: center;
+}
+
+.footer-section .icon{
+    position: absolute;
+    left: 45%;
+    bottom: 97%;
+}
+
+.footer-section .icon a{
+    display: inline-block;
+}
+
+.footer-section .icon img{
+    width: 70px;
+}
+
+.footer-section .icon .fb img{
+    margin-right: 30px;
+}
+
+.footer-section .footer-img img{
+    width: 480px;
+    position: absolute;
+    left: 60%;
+    bottom: 65%;
+}
+    
+.footer-section .important-link h3{
+    color: #fff;
+    font-family: "Poetsen One", sans-serif;
+    margin-top: 20px;
+}
+
+.footer-section .important-link a,p{
+    color: #fff;
+    font-family: "Asap", sans-serif;
+    font-size: 15px;
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+/* Footer-Section End */
+
+
+/* Mobile Responsive Layout Start */
+
+@media (max-width: 768px) {
+  /* Container padding adjustment */
+  .container {
+    padding: 0 15px;
+  }
+
+  /* Header Section */
+  header .top-header {
+    text-align: center;
+  }
+
+  header .top-header a {
+    margin: 10px;
+  }
+
+  header .menu .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .menu a img {
+    width: 200px;
+    margin: 10px 0;
+  }
+
+  /* Banner Section */
+  .banner-section .content-wrapper {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .banner-section .banner-image img {
+    width: 100%;
+  }
+
+  .banner-section .banner-content {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .banner-section .banner-content .para-1 {
+    margin-right: 0;
+  }
+
+  .banner-section .banner-content img {
+    position: static;
+    margin-top: 20px;
+    width: 80px;
+  }
+
+  /* Product Section */
+  .product-section {
+    padding-bottom: 60px;
+  }
+
+  .product-section .content-wrapper {
+    grid-template-columns: 1fr;
+    margin: 0 20px;
+    gap: 40px;
+  }
+
+  .product-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer Section */
+  .footer-section {
+    padding-top: 40px;
+  }
+
+  .footer-section .icon {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .footer-section .footer-img img {
+    width: 100%;
+    position: static;
+    margin-top: 20px;
+  }
+
+  .footer-section .important-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section .column-left,
+  .footer-section .column-right {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-section .footer-logo img {
+    width: 200px;
+    margin-top: 20px;
+  }
+}
+
+/* Mobile Responsive Layout End */
